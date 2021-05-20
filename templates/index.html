@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Tact Forms</title>
+    <style>
+        .inputfield{
+        margin-bottom: 0.65rem;
+        }
+        .form{
+        background:lightsteelblue;
+        box-shadow:inset 20px 20px 60px #bebebe,
+                   inset -20px -20px 60px #ffffff;
+                padding: 2rem 1rem; 
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <img src="data:image/png;base64,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">
+    <h1>Tact Forms</h1>
+    <div class="form">
+        <form action="/add-details" method="POST">
+            <div class="inputfield">
+                <label>Name</label>
+                <input type="text" class="input" name="Name">
+            </div>
+            <br>
+            <div class="inputfield">
+                <label>College Name</label>
+                <input type="text" class="input" name="Collegename">
+            </div>
+            <br>
+            <div class="inputfield">
+                <label>Department</label>
+                <input type="text" class="input" name="Department">
+            </div>
+            <br>
+            <div class="inputfield">
+                <label>Year</label>
+                <div class="custom_select">
+                    <select name="Year">
+                        <option value="">Select</option>
+                        <option value="first year">First year</option>
+                        <option value="second year">Second year</option>
+                        <option value="third year">Third year</option>
+                        <option value="final year">final year</option>
+                    </select>
+                </div>
+            </div>
+            <br>
+            <div class="inputfield">
+                <label>Mail id</label>
+                <input type="email" class="input" name="emailaddress">
+            </div>
+            <br>
+            <div class="inputfield">
+                <label>Contact Number</label>
+                <input type="tel" class="input" name="Contactnumber">
+            </div>
+            <br>
+            <div class="inputfield">
+                <label>Knew about featurepreneur</label>
+                <div class="custom_select">
+                    <select name="knew about featurepreneur">
+                        <option value="">Select</option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+            </div>
+            <br>
+            <div class="inputfield submit">
+                <input type="submit" value="Submit" class="btn">
+                <button>cancel</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+            
+            
